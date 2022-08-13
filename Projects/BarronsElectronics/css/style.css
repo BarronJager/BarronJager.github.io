@@ -1,0 +1,288 @@
+/* style.css */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 1024px;
+    padding: 0;
+    margin: 0 auto;
+    color: #000000;
+    background-color: #e2e2e2;
+}
+
+main {
+    width: 700px;
+    float: right;
+}
+
+main section h2 {
+    font-size: 200%;
+    text-shadow: 2px 2px #afafaf;
+}
+
+header {
+    margin-top: 40px;
+    border: 4px solid #000000;
+    border-radius: 5px;
+    padding: 5px;
+    color: #ffffff;
+    position: relative;
+    background: #4b4b4b;
+}
+
+header h1 {
+    text-align: center;
+    padding-left: 30px;
+    font-size: 3em;
+    text-shadow: 4px 4px #333333;
+}
+
+footer {
+    text-align: right;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    color: #000000;
+    position: relative;
+    background: #fafafa;
+    clear: both;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:800px) and (max-width:1000px) {
+    main, aside, header, footer {
+        width: 95vw;
+        float: left;
+    }
+    main {
+        clear: left;
+        float: left;
+    }
+    aside {
+        clear: left;
+        float: left;
+    }
+    body {
+        margin: 0;
+        width: 0;
+    }
+    #store2 {
+        width: 75vw;
+        height: 50vw;
+    }
+    #map {
+        width: 75vw;
+        height: 60vw;
+    }
+    aside.home, aside.products, aside.about, aside.contact, aside.order {
+        width: 95vw;
+    }
+    aside.home nav ul li, aside.products nav ul li, aside.about nav ul li, aside.contact nav ul li, aside.order nav ul li {
+        width: 75vw;
+        padding: 3px 3px 3px 3px;
+        margin-left: 60px;
+    }
+    aside h2 {
+        padding-left: 25px;
+    }
+    aside.products #saletag {
+        margin-bottom: 40px !important;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:799px) {
+    main, aside, header, footer {
+        width: 92vw;
+        float: left;
+    }
+    main {
+        clear: both;
+        float: left;
+    }
+    aside {
+        clear: both;
+        float: left;
+    }
+    body {
+        margin: 0;
+        width: 0;
+    }
+    #store2 {
+        width: 75vw;
+        height: 50vw;
+    }
+    #map {
+        width: 75vw;
+        height: 60vw;
+    }
+    aside.home, aside.products, aside.about, aside.contact, aside.order {
+        width: 95vw;
+    }
+    aside.home nav ul li, aside.products nav ul li, aside.about nav ul li, aside.contact nav ul li, aside.order nav ul li {
+        width: 75vw;
+        padding: 3px 3px 3px 3px;
+        margin-left: 20px;
+    }
+    aside h2 {
+        padding-left: 25px;
+    }
+    aside.products #saletag {
+        margin-bottom: 40px !important;
+    }
+}
+
+main.products ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+figure {
+    float: left;
+}
+
+figure img {
+    border: 1px solid #000000;
+    border-radius: 2px;
+}
+
+figure #tablet {
+    background-color: #ffffff;
+    padding-top: 50px;
+}
+
+figure #tv {
+    background-color: #ffffff;
+    padding-top: 50px;
+}
+
+figure .caption1 {
+    padding: 20px 0px 20px 20px;
+}
+
+figure .caption2 {
+    padding: 20px 0px 20px 0px;
+}
+
+figure .caption3 {
+    padding: 20px 0px 20px 15px;
+}
+
+figure .caption4 {
+    padding: 20px 0px 20px 20px;
+}
+
+figure .caption5 {
+    padding: 20px 0px 20px 20px;
+}
+
+figure .caption6 {
+    padding: 20px 0px 20px 20px;
+}
+
+figure .caption7 {
+    padding: 20px 0px 20px 15px;
+}
+
+figure .caption8 {
+    padding: 20px 0px 20px 20px;
+}
+
+#store2, #map {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 35px;
+    border: 2px solid #333333;
+}
+
+#store {
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 2px solid #333333;
+}
+
+#sale {
+    margin-left: 10px;
+    margin-top: 20px;
+    border: 2px solid #333333;
+}
+
+#saletag {
+    margin-left: 13px;
+    margin-bottom: 40px;
+}
+
+aside.products #saletag {
+    margin-left: 13px;
+    margin-bottom: 530px;
+}
+
+.para, .para2, .para3, .para4 {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+aside {
+    width: 245px;
+    float: left;
+    text-align: center;
+    background-color: #cfcfcf;
+    border: 1px solid #a8a8a8;
+    border-radius: 2px;
+}
+
+aside nav ul {
+    list-style-type: none;
+}
+
+aside h2 {
+    text-shadow: 1px 1px #afafaf;
+}
+
+aside nav ul li {
+    border-radius: 10px;
+    border: 2px solid #333333;
+    padding: 3px 30px 3px 30px;
+    margin-bottom: 20px;
+    width: 100px;
+    background-color: #cecece;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-right: 30px;
+}
+
+footer nav ul li {
+    display: inline-block;
+    padding: 5px 8px 10px 8px;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    border: 2px solid #000000;
+    padding: 3px 20px 3px 20px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    background-color: #c0c0c0;
+}
+
+footer p {
+    text-align: center;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: #eeff00;
+}

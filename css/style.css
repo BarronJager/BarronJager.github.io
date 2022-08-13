@@ -59,3 +59,12 @@ img {
 .typewrite:hover {
     color: white;
 }
+
+#resume {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+small {
+    text-indent: 50px;
+}
