@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+    background: #ADD8E6;
+    font-family: Arial;
+    background-image: url("https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80");
+    background-size: cover;
+}
+
+.card {
+    width: 350px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    color: #515353;
+    background-color: #fff;
+    border: 2px solid #515353;
+    padding: 6px 9px;
+    border-radius: 3px;
+    margin-left: 50px;
+}
+
+button:hover {
+    background: #515353;
+    color: #fff;
+}
+
+h1 {
+    color: #000000;
+    text-shadow: 2px 2px #515353;
+    font-size: 100px;
+    background-color: #919191;
+}
+
+h2 {
+    color: #000000;
+    font-size: 50px;
+}
+
+.select {
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    background-color: #fff;
+}

@@ -1,0 +1,50 @@
+ img {
+    height: 250px;
+    margin: 25px 20px 5px 20px;
+}
+
+.container > h2 {
+    flex: 0 0 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.delete {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: lightgrey;
+    margin: 100px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.delete:hover {
+    background-color: darkgrey;
+  }
+
+h1 {
+    font-size: 75px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+body {
+    text-align: center;
+}
+
+.upload {
+    background-color: lightgrey;
+}
+
+#showPassword {
+    text-decoration: underline;
+}
+
+#showPassword:hover {
+    cursor: pointer;
+}

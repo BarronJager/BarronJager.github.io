@@ -1,0 +1,44 @@
+/* style.css */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.technologypic {
+    text-align: center;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+#featuredTechnologyPanel, #featuredTechnologyPanel2 {
+    background: #dadada;
+    padding: 10px;
+}
+
+#featuredTechnologyPanel img, #featuredTechnologyPanel2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 1px solid #dadada;
+    padding: 20px;
+    background: #bababa;
+}
+
+#socialMediaPanel {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+footer {
+    margin-bottom: 20px;
+}
+
+#line {
+    border-top: 2px solid #757575;
+    padding-top: 50px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYT API</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nyt.css">
+    <script defer src="js/nyt.js"></script>
+</head>
+
+<body>
+    <h1>New York Times</h1>
+    <h2>Choose a news section</h2>
+    <select name="Article" id="article-select" class="select">
+        <option value="home">Home</option>
+        <option value="arts">Arts</option>
+        <option value="business">Business</option>
+        <option value="food">Dining</option>
+        <option value="fashion">Fashion</option>
+        <option value="health">Health Magazine</option>
+        <option value="opinion">National Opinion</option>
+        <option value="politics">Politics</option>
+        <option value="realestate">Real Estate</option>
+        <option value="science">Science</option>
+        <option value="sports">Sports</option>
+        <option value="technology">Technology</option>
+        <option value="world">World</option>
+    </select>
+    <button id="getArticles">Refresh</button>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 d-flex gap-5 justify-content-around flex-wrap" id="articles"></div>
+        </div>
+    </div>
+</body>
+
+</html>
