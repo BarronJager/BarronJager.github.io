@@ -63,7 +63,7 @@ const api_key = 'imNlqZk4Hb0NhPKCLyTyMQg2USVbQyWb'
 document.querySelector('#getArticles').addEventListener('click', function () {
     let articleSelect = document.getElementById('article-select')
     let articleType = articleSelect.value
-    let url = `http://api.nytimes.com/svc/topstories/v2/${articleType}.json?api-key=${api_key}`
+    let url = `https://api.nytimes.com/svc/topstories/v2/${articleType}.json?api-key=${api_key}`
     fetch(url)
         .then(response => response.json())
         .then(data => {
