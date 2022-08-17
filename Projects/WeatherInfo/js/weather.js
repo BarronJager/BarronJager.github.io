@@ -16,7 +16,7 @@ function getCurrentWeather(data, zipCode) {
     p.innerHTML = 'City: ' + data.name + '<br><br>' + dateStr + ' - ' + timeStr + '<br>' + 'Sky: ' + data.weather[0].description + '<br>' + 'Temperature: ' + data.main.temp + '<br>' + 'Max Temperature: ' + data.main.temp_max + '<br>' + 'Minimum Temperature: ' + data.main.temp_min + '<br>' + 'Humidity: ' + data.main.humidity + '<br>' + 'Feels Like: ' + data.main.feels_like + '<br>' + 'Wind Speed: ' + data.wind.speed + '<br>' + 'Pressure: ' + data.main.pressure + '<br>' + 'Clouds: ' + data.clouds.all // content for p
     weatherContent.append(p) // add the p to the weatherContent to the DOM
     const icon = document.createElement('img') // create img element for icon
-    icon.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`) // set the src attribute using the data from the API
+    icon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`) // set the src attribute using the data from the API
     weatherContent.append(icon) // add the icon to the DOM
     weatherContent.style.display = 'block'
 }
@@ -45,7 +45,7 @@ function getWeatherForecast(data, zipCode) {
 
         weatherContent.append(p) // add the p to the weatherContent to the DOM
         let icon = document.createElement('img') // create img element for icon
-        icon.setAttribute('src', `http://openweathermap.org/img/wn/${data.list[index].weather[0].icon}.png`) // set the src attribute using the data from the API
+        icon.setAttribute('src', `https://openweathermap.org/img/wn/${data.list[index].weather[0].icon}.png`) // set the src attribute using the data from the API
         weatherContent.append(icon) // add the icon to the DOM
     }
 
@@ -59,7 +59,7 @@ const API_KEY = '8f9cd6c9f00f6970e884eb24cd667a22' // Replace this with your own
 document.querySelector('#getWeather').addEventListener('click', function () {
     weatherContent.innerHTML = '' // clear out prior results
     let zipCode = document.querySelector('#zip').value
-    let url = `http://api.openweathermap.org/data/2.5/weather?zip=${zipCode},US&appid=${API_KEY}&units=imperial`
+    let url = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode},US&appid=${API_KEY}&units=imperial`
     fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -73,7 +73,7 @@ document.querySelector('#getWeather').addEventListener('click', function () {
 document.querySelector('#getWeather5day').addEventListener('click', function () {
     weatherContent.innerHTML = '' // clear out prior results
     let zipCode = document.querySelector('#zip').value
-    let url = `http://api.openweathermap.org/data/2.5/forecast?zip=${zipCode},US&appid=${API_KEY}&units=imperial`
+    let url = `https://api.openweathermap.org/data/2.5/forecast?zip=${zipCode},US&appid=${API_KEY}&units=imperial`
     fetch(url)
         .then(response => response.json())
         .then(data => {
