@@ -254,29 +254,19 @@
     </header>
     <div class="container py-4 d-flex justify-content-center">
         <a id="contact">
-        <form id="contactForm">
+        <form action="https://formsubmit.co/barronjager@gmail.com" method="POST">
             <h1 class="text-center mb-4">Contact Me</h1>
           <div class="mb-3">
             <label class="form-label" for="name">Name</label>
-            <input class="form-control" id="name" type="text" placeholder="Name" style="width: 20rem;" data-sb-validations="required" />
-            <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+            <input class="form-control" name="name" type="text" placeholder="Name" style="width: 20rem;" required>
           </div>
           <div class="mb-3">
-            <label class="form-label" for="emailAddress">Email Address</label>
-            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" style="width: 20rem;" data-sb-validations="required, email" />
-            <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-            <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+            <label class="form-label" for="emailInfo">Email Address</label>
+            <input class="form-control" id="emailInfo" type="email" placeholder="Email Address" style="width: 20rem;" name="email" required>
           </div>
           <div class="mb-3">
             <label class="form-label" for="message">Message</label>
-            <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem; width: 20rem;" data-sb-validations="required"></textarea>
-            <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
-          </div>
-          <div class="d-none" id="submitSuccessMessage">
-            <div class="text-center mb-3">Form submission successful!</div>
-          </div>
-          <div class="d-none" id="submitErrorMessage">
-            <div class="text-center text-danger mb-3">Error sending message!</div>
+            <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem; width: 20rem;" name="message" required></textarea>
           </div>
           <div class="text-center">
             <button class="btn btn-primary btn-lg" type="submit">Submit</button>
