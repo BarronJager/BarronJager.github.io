@@ -52,6 +52,14 @@ img {
     padding-top: 100px;
 }
 
+#divider2 {
+    padding-top: 30px;
+}
+
+#divider3 {
+    padding-top: 60px;
+}
+
 .card {
     box-shadow: 2px 2px 5px #979696;
 }
@@ -60,11 +68,21 @@ img {
     color: white;
 }
 
-#resume {
+#resume2 {
     color: inherit;
     text-decoration: inherit;
 }
 
 small {
     text-indent: 50px;
+}
+
+#navbar {
+    opacity: .95;
+}
+
+#back-to-home {
+    font-size: 25px;
+    text-decoration: none;
+    
 }
