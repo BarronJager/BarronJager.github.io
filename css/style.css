@@ -1,84 +1,68 @@
-
+/* https://colorhunt.co/palette/222831393e4600adb5eeeeee */
 body {
-    background: #252525;
-    font-family: 'Chivo', sans-serif;
-    color: #fff
+    font-family: 'ShareTech', sans-serif !important;
+    background: #222831 !important;
+    color: #EEEEEE !important;
 }
-
-.btn-primary {
-    background: #87b1c3;
-    border: #87b1c3;
-    color: #ffffff
+.navbar {
+    background: #393E46;
+    opacity: 95%;
 }
-
-.btn {
-    transition-duration: 0.3s;
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 20px;
+.nav-item {
+    margin: 0 7px;
 }
-
-.btn:hover {
-    background-color: #000000;
-}
-
-#top-nav {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 10px;
-    font-size: 20px;
-}
-
-h4 {
-    margin-top: 15px;
-}
-
-h3 {
-    margin-top: 140px;
-}
-
-img {
-    padding-top: 75px;
-}
-
-.typewrite {
-    font-size: 25px;
-    color:#fff; 
-    text-decoration: none;
-}
-
-#divider {
-    padding-top: 100px;
-}
-
-#divider2 {
-    padding-top: 30px;
-}
-
 .card {
-    box-shadow: 2px 2px 5px #979696;
-}
-
-.typewrite:hover {
-    color: white;
-}
-
-#resume2 {
-    color: inherit;
-    text-decoration: inherit;
-}
-
-small {
-    text-indent: 50px;
-}
-
-#navbar {
-    opacity: .95;
-}
-
-#back-to-home {
-    font-size: 25px;
     text-decoration: none;
-    
+    text-shadow: 8px 8px 10px#0000008c;
+}
+#link {
+    text-decoration: none;
+    color: #EEEEEE !important;
+    font-size: 20px;
+}
+#card1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url('../images/laptop.png');
+}
+#card2 {
+    background-image: url('../images/technology.png');
+}
+#card3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url('../images/flowers.png');
+}
+#card4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url('../images/books.png');
+}
+#card5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url('../images/weather.png');
+}
+#card6 {
+    background-image: url('../images/newspaper.png');
+}
+#description {
+    margin: 0px 8px 0px 8px !important;
+}
+button:hover {
+    border: 1px solid #EEEEEE !important;
+}
+.divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15);
+}
+.a {
+    text-decoration: none;
+}
+#welcome {
+    text-shadow: 8px 8px 10px#0000008c;
+}
+
+#intro-background {
+    background: linear-gradient(300deg, #1d2229, #1c2027, #262d36);
 }
