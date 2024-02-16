@@ -7,6 +7,7 @@
     <!-- Bootstrap 5 (beta 3) style sheet -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="/js/typerwrite.js"></script>
+    <script src="/js/switch.js"></script>
     <!-- Style sheet -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Google Font(s) -->
@@ -18,8 +19,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
+    <nav>
+        <div class="container-fluid fixed-top navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
             <!-- toggle button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -36,10 +37,10 @@
                         <a class="nav-link" id="top-nav" href="#work">Work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="top-nav" href="#resume">Resume</a>
+                        <a class="nav-link" id="top-nav" href="/resume.html">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="top-nav" href="#contact">Contact</a>
+                        <a class="nav-link" id="top-nav" href="/contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="top-nav" href="https://www.linkedin.com/in/barron-jager/">LinkedIn</a>
@@ -48,6 +49,7 @@
             </div>
         </div>
     </nav>
+    <p class="justify-content-center" id="divider2">
     <header class="py-5">
         <div class="container px-5">
             <div class="row gx-5">
@@ -58,7 +60,8 @@
                         <h3 class="py-10">Hello, my name is</h3>
                         <a class="typewrite" data-period="2000" data-type='["Barron Jager."]'></a>
                         <h4>I'm a Web developer, dedicated to creating websites that are visually appealing and easy to navigate, ensuring the website has smooth performance and capacity.</h4>
-                        <a href="#work" class="btn btn-primary">Continue to work</a>
+                        <a href="/contact.html" class="btn btn-primary">Contact Me</a>
+                        <a href="/resume.html" class="btn btn-primary" style="margin-left: 10px">Resume</a>
                     </section>
                 </div>
             </div>
@@ -82,7 +85,7 @@
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-4">
-                            <div class="card mb-3 bg-dark">
+                            <div class="card mb-5 bg-dark">
                                 <img class="card-img-top"
                                     src="/images/TechnologyWebpagePreview.PNG"
                                     alt="Technology Webpage preview">
@@ -115,7 +118,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Student Records</h5>
                                     <p class="card-text">This was a project developed in php using a mysql database to create, modify, delete, and list student records. It includes different types of display and entry fields based on the data.</p>
-                                    <a href="Projects/StudentRecords/advanced-search.php" class="btn btn-primary">View</a>
+                                    <a href="https://tiring-make.000webhostapp.com/display-records.php" class="btn btn-primary">View</a>
                                 </div>
                             </div>
                         </div>
@@ -147,131 +150,7 @@
                 </main>
             </div>
         </a>
-        <p class="justify-content-center" id="divider">
-    <div class="container py-4" style="width: 48rem;">
-        <object>
-            <h1 class="text-center mb-4">Resume <a id="resume" href="Barron Jager Resume.pdf"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-file-earmark-pdf-fill" viewBox="0 0 16 16">
-                <path d="M5.523 12.424c.14-.082.293-.162.459-.238a7.878 7.878 0 0 1-.45.606c-.28.337-.498.516-.635.572a.266.266 0 0 1-.035.012.282.282 0 0 1-.026-.044c-.056-.11-.054-.216.04-.36.106-.165.319-.354.647-.548zm2.455-1.647c-.119.025-.237.05-.356.078a21.148 21.148 0 0 0 .5-1.05 12.045 12.045 0 0 0 .51.858c-.217.032-.436.07-.654.114zm2.525.939a3.881 3.881 0 0 1-.435-.41c.228.005.434.022.612.054.317.057.466.147.518.209a.095.095 0 0 1 .026.064.436.436 0 0 1-.06.2.307.307 0 0 1-.094.124.107.107 0 0 1-.069.015c-.09-.003-.258-.066-.498-.256zM8.278 6.97c-.04.244-.108.524-.2.829a4.86 4.86 0 0 1-.089-.346c-.076-.353-.087-.63-.046-.822.038-.177.11-.248.196-.283a.517.517 0 0 1 .145-.04c.013.03.028.092.032.198.005.122-.007.277-.038.465z"/>
-                <path fill-rule="evenodd" d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3zM4.165 13.668c.09.18.23.343.438.419.207.075.412.04.58-.03.318-.13.635-.436.926-.786.333-.401.683-.927 1.021-1.51a11.651 11.651 0 0 1 1.997-.406c.3.383.61.713.91.95.28.22.603.403.934.417a.856.856 0 0 0 .51-.138c.155-.101.27-.247.354-.416.09-.181.145-.37.138-.563a.844.844 0 0 0-.2-.518c-.226-.27-.596-.4-.96-.465a5.76 5.76 0 0 0-1.335-.05 10.954 10.954 0 0 1-.98-1.686c.25-.66.437-1.284.52-1.794.036-.218.055-.426.048-.614a1.238 1.238 0 0 0-.127-.538.7.7 0 0 0-.477-.365c-.202-.043-.41 0-.601.077-.377.15-.576.47-.651.823-.073.34-.04.736.046 1.136.088.406.238.848.43 1.295a19.697 19.697 0 0 1-1.062 2.227 7.662 7.662 0 0 0-1.482.645c-.37.22-.699.48-.897.787-.21.326-.275.714-.08 1.103z"/>
-              </svg></a></h1>
-        </object>
-        <div class="text-center nav justify-content-center border-bottom mb-5">
-            <p>
-                <b>Barron Jager<br>
-                Vancouver, WA 98685<br>
-                BarronJager@gmail.com<br>
-                360-525-0292</b>
-            </p>
-        </div>
-        <div class="text-center">
-            <p>
-                Self-motivated independent college student pursuing a career in web development.
-                Wide range of web development skills including coding, responsive design, and interpersonal skills.
-            </p>
-        </div>
-        <div class="text-right mt-5">
-            <h4>Education</h4>
-            <p>
-                Clark College, Vancouver, Washington<br>
-                Planned graduation: December 2022.<br>
-                Associate Degree in Applied Technology - Web Development
-            </p>
-        </div>
-        <div class="mt-5"></div>
-        <h4>Experience</h4>
-        <ul>
-            <li>
-                Creation and administration of gaming servers
-            </li>
-            <li>
-                Managing customer feature requests
-            </li>
-            <li>
-                Customer support of bug fixes
-            </li>
-            <li>
-                YouTube content creation
-            </li>
-            <li>
-                Creating WordPress sites
-            </li>
-            <li>
-                Website application creation
-            </li>
-        </ul>
-        <h4>Skills</h4>
-        <ul>
-            <li>
-                HTML
-            </li>
-            <li>
-                CSS
-            </li>
-            <li>
-                WordPress
-            </li>
-            <li>
-                UX
-            </li>
-            <li>
-                JavaScript
-            </li>
-            <li>
-                Java
-            </li>
-            <li>
-                Python
-            </li>
-            <li>
-                PHP
-            </li>
-            <li>
-                Microsoft Database admin
-            </li>
-            <li>
-                MySQL
-            </li>
-            <li>
-                Design
-            </li>
-            <li>
-                Adobe Photoshop
-            </li>
-        </ul>
-        </div>
     </header>
-    <div class="container py-4 d-flex justify-content-center">
-        <a id="contact">
-        <form id="contactForm">
-            <h1 class="text-center mb-4">Contact Me</h1>
-          <div class="mb-3">
-            <label class="form-label" for="name">Name</label>
-            <input class="form-control" id="name" type="text" placeholder="Name" style="width: 20rem;" data-sb-validations="required" />
-            <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
-          </div>
-          <div class="mb-3">
-            <label class="form-label" for="emailAddress">Email Address</label>
-            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" style="width: 20rem;" data-sb-validations="required, email" />
-            <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-            <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-          </div>
-          <div class="mb-3">
-            <label class="form-label" for="message">Message</label>
-            <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem; width: 20rem;" data-sb-validations="required"></textarea>
-            <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
-          </div>
-          <div class="d-none" id="submitSuccessMessage">
-            <div class="text-center mb-3">Form submission successful!</div>
-          </div>
-          <div class="d-none" id="submitErrorMessage">
-            <div class="text-center text-danger mb-3">Error sending message!</div>
-          </div>
-          <div class="text-center">
-            <button class="btn btn-primary btn-lg" type="submit">Submit</button>
-          </div>
-        </form>
-    </a>
-    </div>
     <div class="container">
         <footer class="py-3 my-4">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -282,10 +161,10 @@
                 <a class="nav-link px-2 text-muted" href="#work">Work</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link px-2 text-muted" href="#resume">Resume</a>
+                <a class="nav-link px-2 text-muted" href="/resume.html">Resume</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link px-2 text-muted" href="#contact">Contact</a>
+                <a class="nav-link px-2 text-muted" href="/contact.html">Contact</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link px-2 text-muted" href="https://www.linkedin.com/in/barron-jager/">LinkedInd</a>
